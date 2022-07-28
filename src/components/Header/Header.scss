@@ -1,0 +1,18 @@
+@use '../../styles/_common';
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn-login {
+    @extend %secondaryButton;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+}

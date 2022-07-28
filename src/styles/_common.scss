@@ -1,0 +1,67 @@
+$mainColor: #FFF;
+$mainAccentColor: #14A76C;
+$additionalAccentColor: #FF652F;
+
+$primaryFont: 'Rubik';
+$secondaryFont: 'Nunito';
+$tertiaryFont: 'Vollkorn';
+
+$mainFontColor: #1F1D2A;
+$additionalFontColor: #4F5569;
+$notesFontColor: #9FA0A7;
+
+%mainTextStyle {
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: $mainFontColor;
+  text-align: center;
+}
+
+%secondaryTextStyle {
+  font-family: $primaryFont;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $additionalFontColor;
+}
+
+%headingSectionFont {
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: $mainFontColor;
+  text-align: center;
+}
+
+$primaryButtonsColor: $mainAccentColor;
+$secondaryButtonsColor: $mainColor;
+
+%primaryButton {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: $primaryFont;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $mainColor;
+  background-color: $primaryButtonsColor;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+}
+
+%secondaryButton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: $primaryFont;
+  color: $mainFontColor;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: $mainColor;
+  border: 1px solid #1F1D2A;
+  border-radius: 15px;
+}

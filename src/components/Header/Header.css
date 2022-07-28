@@ -1,0 +1,26 @@
+.header__btn-login {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Rubik";
+  color: #1F1D2A;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #FFF;
+  border: 1px solid #1F1D2A;
+  border-radius: 15px;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__btn-login {
+  padding-left: 58px;
+  padding-right: 58px;
+}/*# sourceMappingURL=Header.css.map */
