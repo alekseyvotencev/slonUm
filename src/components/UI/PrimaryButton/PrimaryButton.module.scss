@@ -1,0 +1,5 @@
+@use '../../../styles/_common' as common;
+
+.primaryButton {
+  @extend %primaryButton;
+}

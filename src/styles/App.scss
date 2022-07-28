@@ -1,5 +1,5 @@
 @use 'sass:math';
-@use 'common';
+@use 'common' as common;
 
 @font-face {
   font-family: 'Rubik';
@@ -72,6 +72,6 @@ body {
 
 .container {
   margin: 0 auto;
-  width: math.div(1400px, 1920px) * 100%;
-  max-width: 1400px;
+  width: math.div(common.$maxWidthContainer, 1920px) * 100%;
+  max-width: common.$maxWidthContainer;
 }

@@ -1,0 +1,45 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.hero {
+  padding-top: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    width: math.div(653px, common.$maxWidthContainer) * 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-company {
+      @extend %notesTextStyle;
+    }
+
+    &-title {
+      margin-bottom: 40px;
+      font-family: common.$secondaryFont;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 122%;
+      color: common.$mainFontColor;
+    }
+
+    &-description {
+      @extend %mainTextStyle;
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: flex-start;
+    &-btn {
+      margin-right: 60px;
+      padding-left: 74.5px;
+      padding-right: 74.5px;
+    }
+  }
+}

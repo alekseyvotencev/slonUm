@@ -1,3 +1,5 @@
+$maxWidthContainer: 1400px;
+
 $mainColor: #FFF;
 $mainAccentColor: #14A76C;
 $additionalAccentColor: #FF652F;
@@ -16,7 +18,6 @@ $notesFontColor: #9FA0A7;
   font-size: 22px;
   line-height: 150%;
   color: $mainFontColor;
-  text-align: center;
 }
 
 %secondaryTextStyle {
@@ -25,6 +26,15 @@ $notesFontColor: #9FA0A7;
   font-size: 20px;
   line-height: 24px;
   color: $additionalFontColor;
+}
+
+%notesTextStyle {
+  font-family: $primaryFont;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $notesFontColor;
 }
 
 %headingSectionFont {
