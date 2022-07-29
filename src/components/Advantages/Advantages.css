@@ -1,0 +1,18 @@
+.advantages__title {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1F1D2A;
+  text-align: center;
+}
+
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 95px;
+  background-image: url("../../img/advantagesBG.png");
+}
+.advantages__title {
+  margin-bottom: 60px;
+}/*# sourceMappingURL=Advantages.css.map */

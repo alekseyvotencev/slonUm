@@ -1,4 +1,4 @@
-$maxWidthContainer: 1400px;
+$maxWidthContainer: 1395px;
 
 $mainColor: #FFF;
 $mainAccentColor: #14A76C;
@@ -38,6 +38,7 @@ $notesFontColor: #9FA0A7;
 }
 
 %headingSectionFont {
+  margin: 0;
   font-family: $secondaryFont;
   font-weight: 700;
   font-size: 32px;

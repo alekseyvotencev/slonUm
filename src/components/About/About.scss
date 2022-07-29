@@ -1,0 +1,18 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.about {
+  padding-top: 200px;
+  padding-bottom: 165px;
+  text-align: center;
+
+  &__description {
+    margin: 0 auto;
+    width: math.div(790px, common.$maxWidthContainer) *100%;
+    @extend %mainTextStyle;
+  }
+
+  &__accent {
+    color: common.$mainAccentColor;
+  }
+}

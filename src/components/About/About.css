@@ -1,0 +1,20 @@
+.about__description {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: #1F1D2A;
+}
+
+.about {
+  padding-top: 200px;
+  padding-bottom: 165px;
+  text-align: center;
+}
+.about__description {
+  margin: 0 auto;
+  width: 56.6308243728%;
+}
+.about__accent {
+  color: #14A76C;
+}/*# sourceMappingURL=About.css.map */

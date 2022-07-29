@@ -17,12 +17,13 @@
 
 .hero {
   padding-top: 218px;
+  padding-bottom: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .hero__text {
-  width: 46.6428571429%;
+  width: 46.8100358423%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

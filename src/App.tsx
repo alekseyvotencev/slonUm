@@ -3,6 +3,8 @@ import Header from './components/Header/Header'
 import './styles/normalize.css'
 import './styles/App.css'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+import Advantages from './components/Advantages/Advantages'
 
 
 const App: React.FC = () => {
@@ -10,6 +12,8 @@ const App: React.FC = () => {
     <div>
       <Header />
       <Hero />
+      <About />
+      <Advantages />
     </div>
   )
 }
