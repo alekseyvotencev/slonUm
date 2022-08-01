@@ -1,0 +1,58 @@
+@use 'sass:math';
+@use '../../../styles/_common.scss' as common;
+
+.checkbox__label {
+  position: relative;
+  padding-left: 24px;
+  width: 450px;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked + .checkbox__input_custom::after {
+    opacity: 1;
+  }
+}
+
+.checkbox__input_custom {
+  position: absolute;
+  top: 50%;
+  margin-left: -24px;
+  width: 19px;
+  height: 19px;
+  border: 1.5px solid common.$mainAccentColor;
+  border-radius: 5px;
+  transform: translateY(-50%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -2px;
+    right: -1px;
+    border-radius: inherit;
+    background: url(../../../img/check.svg) no-repeat center, common.$mainAccentColor ;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+  }
+}
+
+.checkbox__span {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: common.$notesFontColor;
+  letter-spacing: 0.04em;
+
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: common.$mainAccentColor;
+  }
+}

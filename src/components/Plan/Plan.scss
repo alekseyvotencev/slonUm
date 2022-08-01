@@ -1,0 +1,76 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.plan {
+  padding-top: 40px;
+  padding-bottom: 245px;
+  background-image: url('../../img/planBG.png');
+
+  &__title {
+    @extend %headingSectionFont;
+    margin-bottom: 87px;
+  }
+
+  &__points {
+    background-image: url('../../img/plan-line.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__point {
+    display: flex;
+
+    &.point1 {
+      margin-bottom: 123px;
+
+      .plan__point-text {
+        width: 225px;
+      }
+    }
+
+    &.point2 {
+      margin-left: 32%;
+      margin-bottom: 136px;
+
+      .plan__point-text {
+        width: 246px;
+      }
+    }
+
+    &.point3 {
+      margin-left: 68%;
+
+      .plan__point-text {
+        width: 268px;
+      }
+    }
+
+
+    &-number {
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      color: common.$mainColor;
+      background-color: common.$additionalAccentColor;
+      border-radius: 50%;
+    }
+
+    &-text {
+      margin: 0;
+      @extend %secondaryTextStyle;
+
+      &-link {
+        color: common.$mainAccentColor;
+        text-decoration: underline;
+      }
+    }
+  }
+}

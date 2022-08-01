@@ -3,6 +3,18 @@ export type ButtonPropsTypes = {
   [x: string]: any;
 }
 
+export type InputPropsTypes = {
+  type: string,
+  placeholder: string,
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string;
+  [x: string]: any;
+}
+
+export type CheckboxPropsTypes = {
+  [x: string]: any;
+}
+
 export interface ITimer {
   endtime: Date;
 }
@@ -31,6 +43,32 @@ export const AdvantagesListArray = [
   {
     id: 'vk',
     description: 'Публикация работ победителей во ВКонтакте.'
+  },
+]
+
+export const QAList = [
+  {
+    title: 'Может ли ребёнок заниматься самостоятельно?',
+    content: 'Да'
+  },
+  {
+    title: 'Как происходит оплата?',
+    content: 'Оплатить могут только авторизованные пользователи. Оплата совершается с помощью сервиса SberPay. Данный сервис позволит быстро и безопасно оплатить заявку.'
+  },
+  {
+    title: 'Есть ли гарантии усвоения материала?',
+    content: 'Да'
+  },{
+    title: 'С кем будет общаться мой ребёнок?',
+    content: 'Да'
+  },
+  {
+    title: 'Каковы принципы обучения?',
+    content: 'Да'
+  },
+  {
+    title: 'Сколько раз в неделю можно заниматься?',
+    content: 'Да'
   },
 ]
 

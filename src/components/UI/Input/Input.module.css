@@ -1,0 +1,25 @@
+.input {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4F5569;
+}
+
+.input {
+  padding: 18px 20px;
+  width: 540px;
+  background-color: #FFF;
+  border: 1px solid #9FA0A7;
+  border-radius: 15px;
+  color: #1F1D2A;
+}
+.input::-moz-placeholder {
+  color: #4F5569;
+}
+.input:-ms-input-placeholder {
+  color: #4F5569;
+}
+.input::placeholder {
+  color: #4F5569;
+}/*# sourceMappingURL=Input.module.css.map */

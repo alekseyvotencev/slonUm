@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.qa {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__title {
+    @extend %headingSectionFont;
+    margin-bottom: 50px;
+  }
+}
+
+.panel__head {
+  width: 100%;
+}

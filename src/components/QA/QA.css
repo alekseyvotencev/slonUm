@@ -1,0 +1,21 @@
+.qa__title {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1F1D2A;
+  text-align: center;
+}
+
+.qa {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.qa__title {
+  margin-bottom: 50px;
+}
+
+.panel__head {
+  width: 100%;
+}/*# sourceMappingURL=QA.css.map */

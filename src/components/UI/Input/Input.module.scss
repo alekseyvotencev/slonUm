@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use '../../../styles/_common.scss' as common;
+
+.input {
+  @extend %secondaryTextStyle;
+  padding: 18px 20px;
+  width: 540px;
+  background-color: common.$mainColor;
+  border: 1px solid common.$notesFontColor;
+  border-radius: 15px;
+  color: common.$mainFontColor;
+
+  &::placeholder {
+    color: common.$additionalFontColor;
+  }
+}

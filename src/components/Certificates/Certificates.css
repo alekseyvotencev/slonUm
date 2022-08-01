@@ -1,0 +1,38 @@
+.certificates__heading {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1F1D2A;
+  text-align: center;
+}
+
+.certificates {
+  padding-bottom: 156px;
+  background-image: url("../../img/certificatesBG.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.certificates__text {
+  width: 35.8422939068%;
+}
+.certificates .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.certificates__heading {
+  margin-bottom: 27px;
+  text-align: left;
+}
+.certificates__paragraph {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #4F5569;
+}
+.certificates__paragraph:last-child {
+  margin-bottom: 0;
+}/*# sourceMappingURL=Certificates.css.map */

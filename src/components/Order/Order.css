@@ -1,0 +1,96 @@
+.order__discount-text {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4F5569;
+}
+
+.order {
+  padding-top: 44px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  background-image: url(../../img/orderBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 40px;
+}
+.order__discount {
+  margin-right: 220px;
+  padding-top: 136px;
+  width: 490px;
+  position: relative;
+  background-color: #FFF;
+  border: 3px solid #14A76C;
+  border-radius: 40px;
+  box-shadow: 0px 5px 15px rgba(20, 167, 114, 0.2);
+}
+.order__discount-label {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.order__discount-label + span {
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFF;
+  transform: translateX(-50%);
+}
+.order__discount-price-container {
+  margin-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.order__discount-text {
+  margin-bottom: 30px;
+}
+.order__discount-text:last-child {
+  margin-bottom: 0;
+}
+.order__discount-numbers {
+  display: flex;
+  margin-bottom: 30px;
+}
+.order__discount-price {
+  margin-right: 17px;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 114px;
+  color: #000;
+}
+.order__discount-price-prev {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+  text-decoration: line-through;
+}
+.order__discount-social {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #14A76C;
+}
+.order__discount-social-text {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFF;
+}
+.order__discount-social-links {
+  display: flex;
+}
+.order__discount-social-links a:not(:last-child) {
+  margin-right: 20px;
+}/*# sourceMappingURL=Order.css.map */

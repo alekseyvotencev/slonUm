@@ -1,0 +1,105 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.order {
+  padding-top: 44px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  background-image: url(../../img/orderBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 40px;
+
+  &__discount {
+    margin-right: 220px;
+    padding-top: 136px;
+    width: 490px;
+    position: relative;
+    background-color: common.$mainColor;
+    border: 3px solid common.$mainAccentColor;
+    border-radius: 40px;
+    box-shadow: 0px 5px 15px rgba(20, 167, 114, 0.2);
+
+    &-label {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &+span {
+        position: absolute;
+        top: 7px;
+        left: 50%;
+        font-family: common.$secondaryFont;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: common.$mainColor;
+        transform: translateX(-50%);
+      }
+    }
+
+    &-price-container {
+      margin-bottom: 40px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    &-text {
+      @extend %secondaryTextStyle;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-numbers {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    &-price {
+      margin-right: 17px;
+      font-weight: 400;
+      font-size: 96px;
+      line-height: 114px;
+      color: #000;
+    }
+
+    &-price-prev {
+      margin-top: 18px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      color: #000;
+      text-decoration: line-through;
+    }
+
+    &-social {
+      padding: 20px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: common.$mainAccentColor;
+
+      &-text {
+        font-family: common.$secondaryFont;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: common.$mainColor;
+      }
+
+      &-links {
+        display: flex;
+
+        a:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.plan__point-text {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4F5569;
+}
+
+.plan__title {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1F1D2A;
+  text-align: center;
+}
+
+.plan {
+  padding-top: 40px;
+  padding-bottom: 245px;
+  background-image: url("../../img/planBG.png");
+}
+.plan__title {
+  margin-bottom: 87px;
+}
+.plan__points {
+  background-image: url("../../img/plan-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.plan__point {
+  display: flex;
+}
+.plan__point.point1 {
+  margin-bottom: 123px;
+}
+.plan__point.point1 .plan__point-text {
+  width: 225px;
+}
+.plan__point.point2 {
+  margin-left: 32%;
+  margin-bottom: 136px;
+}
+.plan__point.point2 .plan__point-text {
+  width: 246px;
+}
+.plan__point.point3 {
+  margin-left: 68%;
+}
+.plan__point.point3 .plan__point-text {
+  width: 268px;
+}
+.plan__point-number {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFF;
+  background-color: #FF652F;
+  border-radius: 50%;
+}
+.plan__point-text {
+  margin: 0;
+}
+.plan__point-text-link {
+  color: #14A76C;
+  text-decoration: underline;
+}/*# sourceMappingURL=Plan.css.map */

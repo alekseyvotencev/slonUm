@@ -1,0 +1,38 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+
+.certificates {
+  padding-bottom: 156px;
+  background-image: url('../../img/certificatesBG.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  &__text {
+    width: math.div(500px, common.$maxWidthContainer) * 100%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    @extend %headingSectionFont;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  &__paragraph {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: common.$additionalFontColor;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

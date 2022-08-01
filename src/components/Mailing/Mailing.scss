@@ -1,0 +1,7 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.mailing__container {
+  width: math.div(1680px, 1920px) * 100%;
+  max-width: 1680px;
+}
