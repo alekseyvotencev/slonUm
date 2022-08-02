@@ -1,4 +1,68 @@
 .footer__container {
+  margin: 0 auto;
   width: 74.4791666667%;
   max-width: 1430px;
+}
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 64px;
+}
+.footer__content {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+.footer__social {
+  margin-right: 200px;
+}
+.footer__social-title {
+  margin-bottom: 9px;
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.footer__social-links {
+  display: flex;
+}
+.footer__social-link:not(:last-child) {
+  margin-right: 22px;
+}
+.footer__nav-list {
+  display: flex;
+  list-style: none;
+}
+.footer__nav-list-item {
+  margin-right: 40px;
+}
+.footer__nav-list-item a {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #1F1D2A;
+  text-decoration: none;
+}
+.footer__block {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__block-title {
+  margin-bottom: 9px;
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.footer__block-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.footer__copyright {
+  text-align: center;
 }/*# sourceMappingURL=Footer.css.map */

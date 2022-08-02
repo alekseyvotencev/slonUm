@@ -1,0 +1,23 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.mailing__form {
+
+  &-input {
+    margin-right: 30px;
+    margin-bottom: 22px;
+  }
+
+  &-btn {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+
+  &-checkbox {
+    color: #D6D7DD;
+
+    a {
+      color: common.$mainColor;
+    }
+  }
+}

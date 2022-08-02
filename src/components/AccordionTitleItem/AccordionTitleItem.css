@@ -1,0 +1,28 @@
+.accordion__title-text {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #4F5569;
+}
+
+.accordion {
+  border-top: 1px solid #1F1D2A;
+}
+.accordion:last-child {
+  border-bottom: 1px solid #1F1D2A;
+}
+
+.accordion__title {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion__title-btn {
+  transition: transform 0.2s ease-in;
+}
+
+.panel[aria-expanded=true] .accordion__title-btn {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=AccordionTitleItem.css.map */

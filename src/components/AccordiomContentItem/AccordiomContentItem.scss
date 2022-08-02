@@ -1,0 +1,10 @@
+@use 'sass:math';
+@use '../../styles/_common.scss' as common;
+
+.accordion__content {
+  padding-bottom: 30px;
+
+  &-text {
+    @extend %secondaryTextStyle;
+  }
+}

@@ -58,7 +58,7 @@ export const QAList = [
   {
     title: 'Есть ли гарантии усвоения материала?',
     content: 'Да'
-  },{
+  }, {
     title: 'С кем будет общаться мой ребёнок?',
     content: 'Да'
   },
@@ -76,3 +76,11 @@ export type AdvantagesItemProps = {
   id: string,
   description: string,
 }
+
+export type AccordionTitleItemProps = {
+  title: string
+};
+
+export type AccordionContentItemProps = {
+  content: string
+};

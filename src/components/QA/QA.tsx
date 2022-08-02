@@ -3,13 +3,14 @@ import './QA.css'
 import '../../../node_modules/react-accordion-ts/src/panel.css'
 import { Accordion } from 'react-accordion-ts';
 import { QAList } from '../../types/types';
-import AccordionItem from '../AccordionItem/AccordionItem';
+import AccordionTitleItem from '../AccordionTitleItem/AccordionTitleItem';
+import AccordiomContentItem from '../AccordiomContentItem/AccordiomContentItem';
 
 const QA = () => {
 
   const items = QAList.map(({ title, content }) => ({
-    title: <AccordionItem title={title} />,
-    content: <p>{content}</p>
+    title: <AccordionTitleItem title={title} key={title} />,
+    content: <AccordiomContentItem content={content} key={content} />
   }));
 
   return (

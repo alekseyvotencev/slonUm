@@ -2,6 +2,82 @@
 @use '../../styles/_common.scss' as common;
 
 .footer__container {
+  margin: 0 auto;
   width: math.div(1430px, 1920px) * 100%;
   max-width: 1430px;
+}
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 64px;
+
+  &__content {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    margin-right: 200px;
+
+    &-title {
+      margin-bottom: 9px;
+      font-family: common.$secondaryFont;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    &-links {
+      display: flex;
+    }
+
+    &-link:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+
+    &-item {
+      margin-right: 40px;
+
+      a {
+        font-family: common.$secondaryFont;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color: common.$mainFontColor;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__block {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-title {
+      margin-bottom: 9px;
+      font-family: common.$secondaryFont;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    &-btn {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
 }

@@ -18,4 +18,10 @@
 
 .panel__head {
   width: 100%;
+}
+
+.panel__body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=QA.css.map */
