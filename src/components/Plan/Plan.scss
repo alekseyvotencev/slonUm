@@ -4,6 +4,7 @@
 .plan {
   padding-top: 40px;
   padding-bottom: 245px;
+  position: relative;
   background-image: url('../../img/planBG.png');
 
   &__title {
@@ -13,7 +14,6 @@
 
   &__points {
     background-image: url('../../img/plan-line.png');
-    background-position: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -70,6 +70,69 @@
       &-link {
         color: common.$mainAccentColor;
         text-decoration: underline;
+      }
+    }
+  }
+
+  &__plane {
+    position: absolute;
+    animation: planeFlight 3s infinite;
+
+    @keyframes planeFlight {
+
+      0% {
+        top: 45px;
+        left: -100px;
+        transform: rotate(45deg);
+        animation-timing-function: linear;
+      }
+
+      20% {
+        top: 165px;
+        left: 280px;
+        transform: rotate(50deg);
+        animation-timing-function: linear;
+      }
+
+      40% {
+        top: 355px;
+        left: 660px;
+        transform: rotate(65deg);
+        animation-timing-function: linear;
+      }
+
+      60% {
+        top: 540px;
+        left: 1040px;
+        transform: rotate(60deg);
+        animation-timing-function: linear;
+      }
+
+      70% {
+        top: 615px;
+        left: 1230px;
+        transform: rotate(45deg);
+        animation-timing-function: linear;
+      }
+
+      80% {
+        top: 625px;
+        left: 1420px;
+        transform: rotate(30deg);
+        animation-timing-function: linear;
+      }
+
+      90% {
+        top: 590px;
+        left: 1610px;
+        transform: rotate(15deg);
+        animation-timing-function: linear;
+      }
+
+      100% {
+        top: 500px;
+        left: 1800px;
+        animation-timing-function: linear;
       }
     }
   }

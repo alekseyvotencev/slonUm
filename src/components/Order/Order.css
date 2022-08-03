@@ -10,10 +10,7 @@
   padding-top: 44px;
   padding-bottom: 20px;
   display: flex;
-  align-items: flex-start;
-  background-image: url(../../img/orderBG.png);
-  background-repeat: no-repeat;
-  background-position: bottom right 40px;
+  align-items: center;
 }
 .order__discount {
   margin-right: 220px;

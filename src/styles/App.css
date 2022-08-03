@@ -51,6 +51,12 @@ body {
   background-color: #F5F5F5;
 }
 
+.body__container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1920px;
+}
+
 .container {
   margin: 0 auto;
   width: 72.65625%;

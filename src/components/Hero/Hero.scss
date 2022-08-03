@@ -4,9 +4,9 @@
 .hero {
   padding-top: 218px;
   padding-bottom: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
 
   &__text {
     width: math.div(653px, common.$maxWidthContainer) * 100%;

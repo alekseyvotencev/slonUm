@@ -1,5 +1,6 @@
 import React from 'react'
 import './Plan.css'
+import planPlane from '../../img/plane.svg'
 
 const Plan = () => {
   return (
@@ -22,6 +23,7 @@ const Plan = () => {
             <p className='plan__point-text'>Загрузите рисунок <a href="/" className='plan__point-text-link'>Здесь</a> или в Личном кабинете</p>
           </div>
         </div>
+        <img src={planPlane} alt="Бумажный самолетик" className='plan__plane' />
       </div>
     </section>
   )

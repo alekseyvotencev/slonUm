@@ -1,15 +1,19 @@
 @use 'sass:math';
 @use '../../styles/_common.scss' as common;
 
-.order__form-title {
-  @extend %headingSectionFont;
-  margin-bottom: 50px;
-}
-
 .order__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  &-container {
+    position: relative;
+  }
+
+  &-title {
+    @extend %headingSectionFont;
+    margin-bottom: 50px;
+  }
 
   &-btn {
     padding-left: 60px;
@@ -23,5 +27,94 @@
 
   &-checkbox {
     margin-bottom: 50px;
+  }
+}
+
+.plane1 {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  z-index: 2;
+  animation: animationPaperPlane1 5s infinite;
+
+  @keyframes animationPaperPlane1 {
+    0% {
+      transform: rotate(0deg);
+      bottom: 0;
+      right: 80px;
+    }
+
+    15% {
+      transform: rotate(0deg);
+      bottom: 0;
+      right: 80px;
+    }
+
+    30%,
+    100% {
+      transform: rotate(-10deg);
+      right: 140px;
+      bottom: 0;
+    }
+  }
+}
+
+.plane2 {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  animation: animationPaperPlane2 5s infinite;
+
+
+  @keyframes animationPaperPlane2 {
+    0% {
+      transform: rotate(0deg);
+      bottom: 0;
+      right: 60px;
+    }
+
+    15% {
+      transform: rotate(0deg);
+      bottom: 0;
+      right: 60px;
+    }
+
+    30%,
+    100% {
+      transform: rotate(15deg);
+      right: 90px;
+      bottom: 0;
+    }
+  }
+}
+
+.plane {
+  position: absolute;
+  z-index: 3;
+  transform: scale(-1, 1) rotate(10deg);
+  animation: flight 5s infinite;
+
+  @keyframes flight {
+    0% {
+      transform: scale(-1, 1) rotate(50deg);
+      right: -300px;
+      bottom: 100px;
+      animation-timing-function: ease-in;
+    }
+
+    10% {
+      transform: scale(-1, 1) rotate(30deg);
+      right: -100px;
+      bottom: 40px;
+      animation-timing-function: ease-out;
+    }
+
+    20%,
+    100% {
+      transform: scale(-1, 1) rotate(15deg);
+      right: 120px;
+      bottom: 10px;
+      animation-timing-function: ease-out;
+    }
   }
 }

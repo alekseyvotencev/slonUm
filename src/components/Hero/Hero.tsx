@@ -1,14 +1,15 @@
 import React from 'react'
+import Picture from '../Picture/Picture';
 import Timer from '../Timer/Timer'
 import PrimaryButton from '../UI/PrimaryButton/PrimaryButton';
 import './Hero.css'
 
 const Hero = () => {
 
-  const endCompetition = new Date('2022.07.30');
+  const endCompetition = new Date('2022.08.08');
 
   return (
-    <div className='container'>
+    <div className="container">
       <div className='hero'>
         <div className='hero__text'>
           <p className='hero__text-company'>ОТ КОМПАНИИ СЛОНУМ</p>
@@ -21,6 +22,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+        <Picture />
       </div>
     </div>
   )

@@ -68,8 +68,7 @@ const Footer = () => {
             <button className='footer__block-btn'>
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="28" cy="28" r="28" fill="#FF652F" />
-                {/* <path d="M22 24L7 1L13 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /> */}
-                <path d="M22 24L7 30L24 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 30L28 24L34 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </button>
           </div>
