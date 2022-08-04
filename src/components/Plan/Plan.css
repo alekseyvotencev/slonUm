@@ -21,6 +21,8 @@
   padding-bottom: 245px;
   position: relative;
   background-image: url("../../img/planBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .plan__title {
   margin-bottom: 87px;
@@ -39,6 +41,28 @@
 }
 .plan__point.point1 .plan__point-text {
   width: 225px;
+  -webkit-animation: showText1 3s infinite;
+          animation: showText1 3s infinite;
+}
+@-webkit-keyframes showText1 {
+  0%, 10% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes showText1 {
+  0%, 10% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .plan__point.point2 {
   margin-left: 32%;
@@ -46,12 +70,56 @@
 }
 .plan__point.point2 .plan__point-text {
   width: 246px;
+  -webkit-animation: showText2 3s infinite;
+          animation: showText2 3s infinite;
+}
+@-webkit-keyframes showText2 {
+  0%, 30% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes showText2 {
+  0%, 30% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .plan__point.point3 {
   margin-left: 68%;
 }
 .plan__point.point3 .plan__point-text {
   width: 268px;
+  -webkit-animation: showText3 3s infinite;
+          animation: showText3 3s infinite;
+}
+@-webkit-keyframes showText3 {
+  0%, 60% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes showText3 {
+  0%, 60% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .plan__point-number {
   margin-right: 40px;
@@ -81,115 +149,165 @@
 }
 @-webkit-keyframes planeFlight {
   0% {
-    top: 45px;
-    left: -100px;
+    top: 68px;
+    left: -90px;
+    transform: rotate(35deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  20% {
+    top: 170px;
+    left: 280px;
     transform: rotate(45deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  20% {
-    top: 165px;
-    left: 280px;
-    transform: rotate(50deg);
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-  }
-  40% {
-    top: 355px;
+  35% {
+    top: 350px;
     left: 660px;
     transform: rotate(65deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  60% {
-    top: 540px;
-    left: 1040px;
+  43% {
+    top: 460px;
+    left: 850px;
     transform: rotate(60deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  70% {
-    top: 615px;
+  51% {
+    top: 540px;
+    left: 1040px;
+    transform: rotate(55deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  59% {
+    top: 610px;
     left: 1230px;
     transform: rotate(45deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  80% {
-    top: 625px;
+  64% {
+    top: 620px;
+    left: 1330px;
+    transform: rotate(35deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  68% {
+    top: 620px;
     left: 1420px;
     transform: rotate(30deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  90% {
+  80% {
     top: 590px;
     left: 1610px;
     transform: rotate(15deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
   100% {
-    top: 500px;
-    left: 1800px;
+    top: 550px;
+    left: 1780px;
+    transform: rotate(10deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 0;
   }
 }
 @keyframes planeFlight {
   0% {
-    top: 45px;
-    left: -100px;
+    top: 68px;
+    left: -90px;
+    transform: rotate(35deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  20% {
+    top: 170px;
+    left: 280px;
     transform: rotate(45deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  20% {
-    top: 165px;
-    left: 280px;
-    transform: rotate(50deg);
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-  }
-  40% {
-    top: 355px;
+  35% {
+    top: 350px;
     left: 660px;
     transform: rotate(65deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  60% {
-    top: 540px;
-    left: 1040px;
+  43% {
+    top: 460px;
+    left: 850px;
     transform: rotate(60deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  70% {
-    top: 615px;
+  51% {
+    top: 540px;
+    left: 1040px;
+    transform: rotate(55deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  59% {
+    top: 610px;
     left: 1230px;
     transform: rotate(45deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  80% {
-    top: 625px;
+  64% {
+    top: 620px;
+    left: 1330px;
+    transform: rotate(35deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    opacity: 1;
+  }
+  68% {
+    top: 620px;
     left: 1420px;
     transform: rotate(30deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
-  90% {
+  80% {
     top: 590px;
     left: 1610px;
     transform: rotate(15deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 1;
   }
   100% {
-    top: 500px;
-    left: 1800px;
+    top: 550px;
+    left: 1780px;
+    transform: rotate(10deg);
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
+    opacity: 0;
   }
 }/*# sourceMappingURL=Plan.css.map */

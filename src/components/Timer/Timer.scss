@@ -31,6 +31,21 @@
     font-size: 24px;
     line-height: 33px;
     color: common.$mainFontColor;
+    animation: fadeIn 1.5s infinite;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      33% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   }
 
   &__timezone {

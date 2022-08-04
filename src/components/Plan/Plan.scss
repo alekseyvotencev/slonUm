@@ -6,6 +6,8 @@
   padding-bottom: 245px;
   position: relative;
   background-image: url('../../img/planBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__title {
     @extend %headingSectionFont;
@@ -27,6 +29,22 @@
 
       .plan__point-text {
         width: 225px;
+        animation: showText1 3s infinite;
+
+        @keyframes showText1 {
+
+          0%,
+          10% {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+
+        }
       }
     }
 
@@ -36,6 +54,23 @@
 
       .plan__point-text {
         width: 246px;
+        animation: showText2 3s infinite;
+
+        @keyframes showText2 {
+
+          0%,
+          30% {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+
+        }
+
       }
     }
 
@@ -44,8 +79,25 @@
 
       .plan__point-text {
         width: 268px;
+        animation: showText3 3s infinite;
+
+        @keyframes showText3 {
+
+          0%,
+          60% {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+
+        }
       }
     }
+
 
 
     &-number {
@@ -81,58 +133,83 @@
     @keyframes planeFlight {
 
       0% {
-        top: 45px;
-        left: -100px;
-        transform: rotate(45deg);
-        animation-timing-function: linear;
+        top: 68px;
+        left: -90px;
+        transform: rotate(35deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
       }
 
       20% {
-        top: 165px;
+        top: 170px;
         left: 280px;
-        transform: rotate(50deg);
+        transform: rotate(45deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
-      40% {
-        top: 355px;
+      35% {
+        top: 350px;
         left: 660px;
         transform: rotate(65deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
-      60% {
-        top: 540px;
-        left: 1040px;
+      43% {
+        top: 460px;
+        left: 850px;
         transform: rotate(60deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
-      70% {
-        top: 615px;
+      51% {
+        top: 540px;
+        left: 1040px;
+        transform: rotate(55deg);
+        animation-timing-function: linear;
+        opacity: 1;
+      }
+
+      59% {
+        top: 610px;
         left: 1230px;
         transform: rotate(45deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
-      80% {
-        top: 625px;
+      64% {
+        top: 620px;
+        left: 1330px;
+        transform: rotate(35deg);
+        animation-timing-function: linear;
+        opacity: 1;
+      }
+
+      68% {
+        top: 620px;
         left: 1420px;
         transform: rotate(30deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
-      90% {
+      80% {
         top: 590px;
         left: 1610px;
         transform: rotate(15deg);
         animation-timing-function: linear;
+        opacity: 1;
       }
 
       100% {
-        top: 500px;
-        left: 1800px;
+        top: 550px;
+        left: 1780px;
+        transform: rotate(10deg);
         animation-timing-function: linear;
+        opacity: 0;
       }
     }
   }

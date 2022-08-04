@@ -6,7 +6,7 @@ const Plan = () => {
   return (
     <section className='plan'>
       <div className='container'>
-        <h3 className='plan__title'>Пошаговый план</h3>
+        <h3 className='plan__title'>Пошаговый <span className='wavy-underline'>план</span></h3>
         <div className='plan__points'>
           <div className="plan__point point1">
             <div className='plan__point-number'>1</div>

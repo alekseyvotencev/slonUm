@@ -7,7 +7,7 @@ const Certificates = () => {
     <section className='certificates'>
       <div className='container'>
         <div className='certificates__text'>
-          <h3 className='certificates__heading'>Выдаём дипломы участникам</h3>
+          <h3 className='certificates__heading'>Выдаём <span className='wavy-underline'>дипломы</span> участникам</h3>
           <p className='certificates__paragraph'>
             Жюри конкурса рассмотрит работы и выделит победителей по городам и возрастным категориям, а также определит другие номинации, подчеркнув уникальную особенность каждого конкретного рисунка — дипломы получат все дети!
           </p>

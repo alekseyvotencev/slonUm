@@ -1,45 +1,43 @@
 import React, { useEffect, useState } from 'react'
-import { ITimer } from '../../types/types';
+import { ITimer, MsInTime } from '../../types/types';
+import { getTimeRemaining } from '../../utils/time';
 import './Timer.css'
 
 const Timer: React.FC<ITimer> = ({ endtime }) => {
 
-  const getTimeRemaining = (endtime: Date) => {
+  const [daysRemaining, setDaysRemaining] = useState(getTimeRemaining(endtime).daysRemaining);
+  const [hoursRemaining, setHoursRemaining] = useState(getTimeRemaining(endtime).hoursRemaining);
+  const [minutesRemaining, setMinutesRemaining] = useState(getTimeRemaining(endtime).minutesRemaining);
 
-    function getValidNumber(number: number) {
-      if (number >= 0 && number < 10) return `0${number}`;
-      else return `${number}`;
+  useEffect(() => {
+    if (getTimeRemaining(endtime).difference > 0) {
+      setInterval(() => {
+        setMinutesRemaining(getTimeRemaining(endtime).minutesRemaining)
+      }, MsInTime.MS_IN_MINUTE);
+      setHoursRemaining(getTimeRemaining(endtime).hoursRemaining);
+      setDaysRemaining(getTimeRemaining(endtime).daysRemaining);
+    } else {
+      setMinutesRemaining('00');
+      setHoursRemaining('00');
+      setDaysRemaining('00');
     }
-
-    const msInDay = 24 * 60 * 60 * 1000;
-    const msInHour = 60 * 60 * 1000;
-    const msInMinute = 60 * 1000;
-
-    const now = new Date();
-    const timeRemaining = endtime.getTime() - now.getTime();
-
-    const daysRemaining = getValidNumber(Math.trunc(timeRemaining / msInDay));
-    const hoursRemaining = getValidNumber(Math.trunc((timeRemaining / msInHour) % 24));
-    const minutesRemaining = getValidNumber(Math.ceil((timeRemaining / msInMinute) % 60));
-
-    return { daysRemaining, hoursRemaining, minutesRemaining }
-  }
+  }, [minutesRemaining])
 
   return (
     <div className='timer'>
       <div className='timer__number-container'>
-        <div className='timer__number'>{getTimeRemaining(endtime).daysRemaining}</div>
+        <div className='timer__number'>{daysRemaining}</div>
         <span className='timer__text'>дней</span>
       </div>
       <span className='timer__colon'>:</span>
       <div className='timer__number-container'>
-        <div className='timer__number'>{getTimeRemaining(endtime).hoursRemaining}</div>
+        <div className='timer__number'>{hoursRemaining}</div>
         <span className='timer__text'>часов</span>
         <span className='timer__timezone'>по МСК</span>
       </div>
       <span className='timer__colon'>:</span>
       <div className='timer__number-container'>
-        <div className='timer__number'>{getTimeRemaining(endtime).minutesRemaining}</div>
+        <div className='timer__number'>{minutesRemaining}</div>
         <span className='timer__text'>минут</span>
       </div>
     </div>

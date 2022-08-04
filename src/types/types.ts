@@ -1,3 +1,10 @@
+import star from '../img/star.png'
+import winner from '../img/winner.png'
+import certification from '../img/certification.png'
+import gift from '../img/gift.png'
+import email from '../img/email.png'
+import vk from '../img/vk.png'
+
 export type ButtonPropsTypes = {
   children: React.ReactNode;
   [x: string]: any;
@@ -13,6 +20,7 @@ export type InputPropsTypes = {
 
 export type CheckboxPropsTypes = {
   [x: string]: any;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export interface ITimer {
@@ -21,27 +29,27 @@ export interface ITimer {
 
 export const AdvantagesListArray = [
   {
-    id: 'star',
+    icon: star,
     description: 'Шанс занять 1 место — в вашем городе и по всей России'
   },
   {
-    id: 'winner',
+    icon: winner,
     description: 'Развитие самостоятельности + свободное время для родителей ;)'
   },
   {
-    id: 'certification',
+    icon: certification,
     description: 'Персональный диплом в разных номинациях каждому участнику'
   },
   {
-    id: 'gift',
+    icon: gift,
     description: 'Призы и скидки для подписчиков и авторизованных пользователей'
   },
   {
-    id: 'email',
+    icon: email,
     description: 'Бесплатный диплом на email — через 1 день после конкурса'
   },
   {
-    id: 'vk',
+    icon: vk,
     description: 'Публикация работ победителей во ВКонтакте.'
   },
 ]
@@ -49,7 +57,7 @@ export const AdvantagesListArray = [
 export const QAList = [
   {
     title: 'Может ли ребёнок заниматься самостоятельно?',
-    content: 'Да'
+    content: 'Ответ'
   },
   {
     title: 'Как происходит оплата?',
@@ -57,23 +65,23 @@ export const QAList = [
   },
   {
     title: 'Есть ли гарантии усвоения материала?',
-    content: 'Да'
+    content: 'Ответ'
   }, {
     title: 'С кем будет общаться мой ребёнок?',
-    content: 'Да'
+    content: 'Ответ'
   },
   {
     title: 'Каковы принципы обучения?',
-    content: 'Да'
+    content: 'Ответ'
   },
   {
     title: 'Сколько раз в неделю можно заниматься?',
-    content: 'Да'
+    content: 'Ответ'
   },
 ]
 
 export type AdvantagesItemProps = {
-  id: string,
+  icon: string,
   description: string,
 }
 
@@ -84,3 +92,10 @@ export type AccordionTitleItemProps = {
 export type AccordionContentItemProps = {
   content: string
 };
+
+export enum MsInTime {
+  MS_IN_DAY = 24 * 60 * 60 * 1000,
+  MS_IN_HOUR = 60 * 60 * 1000,
+  MS_IN_MINUTE = 60 * 1000,
+  MS_IN_SECOND = 1000,
+}

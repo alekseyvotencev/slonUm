@@ -8,7 +8,7 @@ const AdvantagesList: React.FC = () => {
   return (
     <div className='advantages__list'>
       {AdvantagesListArray.map(item =>
-        <AdvantagesItem id={item.id} description={item.description} key={item.id} />)
+        <AdvantagesItem icon={item.icon} description={item.description} key={item.icon} />)
       }
     </div>
   )

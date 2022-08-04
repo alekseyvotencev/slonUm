@@ -70,14 +70,13 @@ body {
   background-color: #F5F5F5;
 }
 
-.body__container {
-  margin: 0 auto;
-  position: relative;
-  max-width: 1920px;
-}
-
 .container {
   margin: 0 auto;
   width: math.div(common.$maxWidthContainer, 1920px) * 100%;
   max-width: common.$maxWidthContainer;
+}
+
+.wavy-underline {
+  text-decoration: underline #ff946e wavy 5px;
+  text-underline-offset: 4px;
 }

@@ -18,4 +18,8 @@
 }
 .advatages__list-item-img {
   margin-bottom: 8px;
+}
+.advatages__list-item-link {
+  text-underline-offset: 2px;
+  color: #FF946E;
 }/*# sourceMappingURL=AdvantagesItem.css.map */

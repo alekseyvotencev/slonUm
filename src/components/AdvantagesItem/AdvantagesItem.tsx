@@ -2,11 +2,17 @@ import React from 'react'
 import { AdvantagesItemProps } from '../../types/types'
 import './AdvantagesItem.css'
 
-const AdvantagesItem: React.FC<AdvantagesItemProps> = ({ id, description }) => {
+const AdvantagesItem: React.FC<AdvantagesItemProps> = ({ icon, description }) => {
   return (
     <article className='advatages__list-item'>
-      <img src={require(`../../img/${id}.png`)} alt="Иконка" className='advatages__list-item-img' />
-      <p className='advatages__list-item-description'>{description}</p>
+      <img src={icon} alt="Иконка" className='advatages__list-item-img' />
+      {
+        description.includes('ВКонтакте')
+          ?
+          <p className='advatages__list-item-description'>{description} <a href="/" className='advatages__list-item-link'>Подписывайтесь!</a></p>
+          :
+          <p className='advatages__list-item-description'>{description}</p>
+      }
     </article>
   )
 }

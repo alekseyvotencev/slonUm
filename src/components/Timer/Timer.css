@@ -36,6 +36,30 @@
   font-size: 24px;
   line-height: 33px;
   color: #1F1D2A;
+  -webkit-animation: fadeIn 1.5s infinite;
+          animation: fadeIn 1.5s infinite;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .timer__timezone {
   position: absolute;

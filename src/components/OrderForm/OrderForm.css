@@ -119,24 +119,25 @@
 .plane {
   position: absolute;
   z-index: 3;
-  transform: scale(-1, 1) rotate(10deg);
   -webkit-animation: flight 5s infinite;
           animation: flight 5s infinite;
 }
 @-webkit-keyframes flight {
   0% {
-    transform: scale(-1, 1) rotate(50deg);
-    right: -300px;
+    transform: scale(-1, 1) rotate(40deg);
+    right: -310px;
     bottom: 100px;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
+    opacity: 0;
   }
   10% {
     transform: scale(-1, 1) rotate(30deg);
     right: -100px;
-    bottom: 40px;
+    bottom: 50px;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
+    opacity: 1;
   }
   20%, 100% {
     transform: scale(-1, 1) rotate(15deg);
@@ -148,18 +149,20 @@
 }
 @keyframes flight {
   0% {
-    transform: scale(-1, 1) rotate(50deg);
-    right: -300px;
+    transform: scale(-1, 1) rotate(40deg);
+    right: -310px;
     bottom: 100px;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
+    opacity: 0;
   }
   10% {
     transform: scale(-1, 1) rotate(30deg);
     right: -100px;
-    bottom: 40px;
+    bottom: 50px;
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
+    opacity: 1;
   }
   20%, 100% {
     transform: scale(-1, 1) rotate(15deg);

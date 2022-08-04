@@ -19,4 +19,9 @@
   &-description {
     @extend %secondaryTextStyle;
   }
+
+  &-link {
+    text-underline-offset: 2px;
+    color: #FF946E;
+  }
 }

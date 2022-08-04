@@ -65,10 +65,18 @@ const Footer = () => {
 
           <div className='footer__block'>
             <p className='footer__block-title'>Наши соцсети:</p>
-            <button className='footer__block-btn'>
+            <button
+              className='footer__block-btn'
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: 'smooth'
+                })
+              }}>
               <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="28" cy="28" r="28" fill="#FF652F" />
-                <path d="M22 30L28 24L34 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 30L28 24L34 30" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>
