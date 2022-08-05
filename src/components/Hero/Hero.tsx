@@ -5,7 +5,7 @@ import Timer from '../Timer/Timer'
 import PrimaryButton from '../UI/PrimaryButton/PrimaryButton';
 import './Hero.css'
 
-const Hero = () => {
+const Hero: React.FC = () => {
 
   return (
     <div className="container">

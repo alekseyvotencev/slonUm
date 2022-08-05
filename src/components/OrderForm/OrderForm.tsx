@@ -7,7 +7,7 @@ import plane1 from '../../img/orderPlane1.svg'
 import plane2 from '../../img/orderPlane2.svg'
 import plane from '../../img/plane.svg'
 
-const OrderForm = () => {
+const OrderForm: React.FC = () => {
   const [user, setUser] = useState({ fullname: '', birthday: '', city: '', email: '', password: '' });
   const [agree, setAgree] = useState(false);
 

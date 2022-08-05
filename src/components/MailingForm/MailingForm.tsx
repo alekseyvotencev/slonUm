@@ -4,7 +4,7 @@ import Input from '../UI/Input/Input'
 import PrimaryButton from '../UI/PrimaryButton/PrimaryButton'
 import './MailingForm.css'
 
-const MailingForm = () => {
+const MailingForm: React.FC = () => {
   const [email, setEmail] = useState('');
   const [agree, setAgree] = useState(false);
 

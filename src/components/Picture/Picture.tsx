@@ -19,7 +19,7 @@ import zero from '../../img/zero.svg'
 import one from '../../img/one.svg'
 import stars from '../../img/stars.svg'
 
-const Picture = () => {
+const Picture: React.FC = () => {
   return (
     <div className='picture'>
       <div className='picture__space'>

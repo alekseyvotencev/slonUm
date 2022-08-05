@@ -2,7 +2,7 @@ import React from 'react'
 import './Certificates.css'
 import certificateImg from '../../img/certificate.png'
 
-const Certificates = () => {
+const Certificates: React.FC = () => {
   return (
     <section className='certificates'>
       <div className='container'>

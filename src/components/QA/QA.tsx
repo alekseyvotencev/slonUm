@@ -6,7 +6,7 @@ import { QAList } from '../../types/types';
 import AccordionTitleItem from '../AccordionTitleItem/AccordionTitleItem';
 import AccordiomContentItem from '../AccordiomContentItem/AccordiomContentItem';
 
-const QA = () => {
+const QA: React.FC = () => {
 
   const items = QAList.map(({ title, content }) => ({
     title: <AccordionTitleItem title={title} key={title} />,

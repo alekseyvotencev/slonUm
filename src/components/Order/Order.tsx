@@ -3,7 +3,7 @@ import orderImg from '../../img/order-discount.png'
 import OrderForm from '../OrderForm/OrderForm'
 import './Order.css'
 
-const Order = () => {
+const Order: React.FC = () => {
   return (
     <div className='container'>
       <section className='order'>

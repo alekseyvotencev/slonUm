@@ -2,7 +2,7 @@ import React from 'react'
 import './Plan.css'
 import planPlane from '../../img/plane.svg'
 
-const Plan = () => {
+const Plan: React.FC = () => {
   return (
     <section className='plan'>
       <div className='container'>
