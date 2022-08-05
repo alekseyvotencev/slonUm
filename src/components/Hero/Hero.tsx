@@ -1,12 +1,11 @@
 import React from 'react'
+import { endCompetition } from '../../types/types';
 import Picture from '../Picture/Picture';
 import Timer from '../Timer/Timer'
 import PrimaryButton from '../UI/PrimaryButton/PrimaryButton';
 import './Hero.css'
 
 const Hero = () => {
-
-  const endCompetition = new Date('2022.08.08');
 
   return (
     <div className="container">

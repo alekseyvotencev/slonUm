@@ -58,7 +58,7 @@ body {
 }
 
 .wavy-underline {
-  -webkit-text-decoration: underline #ff946e wavy 5px;
-          text-decoration: underline #ff946e wavy 5px;
+  -webkit-text-decoration: underline #FF946E wavy 5px;
+          text-decoration: underline #FF946E wavy 5px;
   text-underline-offset: 4px;
 }/*# sourceMappingURL=App.css.map */

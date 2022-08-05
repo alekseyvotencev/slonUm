@@ -99,3 +99,5 @@ export enum MsInTime {
   MS_IN_MINUTE = 60 * 1000,
   MS_IN_SECOND = 1000,
 }
+
+export const endCompetition = new Date('2022.08.08');

@@ -140,6 +140,7 @@
 }
 .plan__point-text-link {
   color: #14A76C;
+  text-underline-offset: 2px;
   text-decoration: underline;
 }
 .plan__plane {
